@@ -42,5 +42,28 @@ The features present in the data are:
 ### Detailed Project Architecture:
 ![image](https://user-images.githubusercontent.com/88075268/148675885-b14145ac-a8cb-4e8c-8978-a3836ef261bb.png)
 
+# Data Preparation:
+This preprocessing step involves exploratory data analysis, data visualization, checking null and duplicate values, outlier treatment , removing undesirable nominal features such as “Timestamp” and usage of binning to convert output variable “allplant” into categorical variable so that data can be made to be used for classification model.
+
+# Exploratory Data Analysis:
+This step is used to identify and summarize the main characteristics in a data set through data analysis and investigation. We used data visualizations to better understand how best to manipulate data sources, to determine which statistical techniques are most appropriate for data analysis, and for choosing the right features for a model.
+EDA includes fallowing steps:
+	Details About Data
+	Data cleaning 
+	Statistical Insights 
+	Univariate analysis 
+	Bi-variate/Multivariate analysis
+# Data Cleansing:
+●	Nominal Features: The “Timestamp” is just nominal data which is only showing the timestamp of the monitoring and as no relevance with other features, so it is removed from the dataset.
+●	Missing Values: There are no missing values and null values in the dataset.
+●	Outliers: Here in this Dataset, There are outliers in the features like “RCM” and “allplant” so the outliers were replaced with the max threshold of the feature.
+●	Binning: The target variable “allplant” is continuous data and to make the data compatible to classification problem it is then converted to categorical by the concept of binning. “allplant” is converted into two categories namely high and low. From 250 to 358 watts per 10 seconds is treated as one category i.e. low consumption and from 358 watts per 10 seconds onwards it is treated as another category i.e. high consumption
+
+# Statistical Insights: 
+
+Below is the count, mean, standard deviation, minimum and maximum values and the quantiles of the data.
+![image](https://user-images.githubusercontent.com/88075268/148676308-f16c2100-1f3a-4328-9d94-faaede474e1b.png)
+	There is not much difference between 75th %tile and max values.
+	Thus observations suggests that there is no Outliers in our data set.
 
 
