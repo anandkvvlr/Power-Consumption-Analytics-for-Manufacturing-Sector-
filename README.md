@@ -196,7 +196,9 @@ We have to enter Energy Consumption of motors in watts per 10 seconds that are c
  ![image](https://user-images.githubusercontent.com/88075268/148676803-d755d332-8aa2-4624-848c-c8904e95b00e.png)
 
 Links 
+
 Link to the Web app: https://energy-consumption-iot.herokuapp.com/
+
 Link to the GitHub repository: https://github.com/anandkvvlr/Power-Consumption-Analytics-for-Manufacturing-Sector-
 
 
