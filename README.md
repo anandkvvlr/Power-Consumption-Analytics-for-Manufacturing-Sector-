@@ -25,7 +25,9 @@ Business Constraint:
 ⮚	Security of the data and working of the IoT sensor.
 
 ### Flow of process in Beverage Plant:
-![image](https://user-images.githubusercontent.com/88075268/148675787-eff7a993-54d0-406a-afec-007e2035ec2f.png)
+![image](https://user-images.githubusercontent.com/88075268/148676995-3b6d0372-bd9a-46c2-946a-a43e5d69769d.png)
+
+![image](https://user-images.githubusercontent.com/88075268/148677022-266e2564-e2ff-4d85-8902-cc6b571d0865.png)
 
 ### Project Dataset:
 Data is collected on real time basis with the help of IoT sensor installed in the various electric motors in each of unit of the manufacturing plant. For every 10 seconds the data of energy consumption by all these individual units is obtained from the IoT sensor.
