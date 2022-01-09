@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Energy Management</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/14dab1683c.js" crossorigin="anonymous"></script>
+    
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="C:\Users\Aniket Annam\Desktop\Data Science\Deployement\static\styles.css"> -->
+    <link rel="stylesheet" href="{{url_for('static' , filename = 'styles.css')}}">
+  </head>
+  <body>
+    <h1 class="display-5"><i class="fas fa-lightbulb"></i> Overall Energy Consumption</h1> <br><br>
+
+    <div class="container mb-3"><hr>
+      <form class="" action="{{url_for("prediction")}}" method="post">
+        <!-- running chain Motors Input -->
+          <label for="RCM">Enter Energy Input of Running Chain Motors (min 10 | max 15) : </label>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;
+            <input step="0.00001" min="10" max="15" type="number" name="RCM" placeholder="Enter RCM Value(in watts per 10 seconds)"><br><br>
+
+        <!-- cooling water terminal motors -->
+          <label for="CWT">Enter Energy Input of Cooling Water Terminal Motors (min 110 | max 130) : </label>&emsp;&nbsp;&nbsp;&nbsp;
+          <input type="number" name="CWT" step="0.00000000001" min="110" max="130" placeholder="Enter CWT Value(in watts per 10 seconds)"><br><br>
+
+        <!-- carbonate gas line -->
+          <label for="M10HP3"> Enter Energy Input of Carbonate Gas Line Motor (min 6 | max 7) : </label>&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&nbsp;&emsp;
+          <input type="number" name="M10HP3" step="0.00000000001" min="6" max="7" placeholder="Enter M10HP3 Value(in watts per 10 seconds)"><br><br>
+
+        <!-- Bottle Capping Unit  -->
+          <label for="M11HP3">Enter Energy Input of Bottle Capping Unit Motor (min 6 | max 7) : </label>&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;
+          <input type="number" name="M11Hp3" step="0.00000000001" min="6" max="7" placeholder="Enter M11HP3 Value(in watts per 10 seconds)"><br><br>
+
+        <!-- Soft Drink Filler Machine -->
+          <label for="M12HP7">Enter Enrgy Input Of Soft Drink Filler Machine (min 15 | max 17) :</label>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;
+          <input type="number" name="M12HP7" step="0.00000000001" min="15" max="17" placeholder="Enter M12HP7 Value(in watts per 10 seconds)"><br><br>
+
+        <!-- Electrical Glass Bottle Washer -->
+          <label for="M13HP19">Enter Energy input of Electrical Glass Bottle Washer Motor (min 41 | max 43) : </label>&nbsp;&nbsp;&nbsp;
+          <input type="number" name="M13HP19" step="0.00000000001" min="41" max="43" placeholder="Enter M13HP19 Value(in watts per 10 seconds)"><br><br>
+
+        <!-- Firewood Boiler  -->
+          <label for="FWB">Enter Energy Input of Firewood Boiler (min 17 | max 19) : </label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+          <input type="number" name="FWB" step="0.00000000001" min="17" max="19" placeholder="Enter FWB Value(in watts per 10 seconds)"><br><br>
+
+        <!-- Bottle Batch Coding Machine  -->
+          <label for="BBCM">Enter Energy Input of Bottle Batch Coding Machine (min 2 | max 4) : </label>&emsp;&emsp;&emsp;&emsp;&emsp;
+          <input type="number" name="BBCM" step="0.00000000001"min="2" max="4" placeholder="Enter BBCM Value(in watts per 10 seconds)"><br><br>
+
+        <!-- other consumption -->
+          <label for="OC">Enter Other consumptions of Motor (min 57 | max 62) : </label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          <input type="number" name="OC" step="0.00000000001" min="57" max="62" placeholder="Enter OC Value(in watts per 10 seconds)"><br><br>
+
+          <!-- button -->
+            <button type="submit" class="btn btn-outline-primary btn-lg">Predict</button>
+            <h1 class="navbar-brand">{{ output }}</h1>
+
+      </form>
+
+    </div>
+  </body>
+</html>
