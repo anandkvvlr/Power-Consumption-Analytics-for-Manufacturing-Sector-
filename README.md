@@ -1,4 +1,4 @@
-# Energy-Management-Using-Iot-Sensors
+#     Power-Consumption-Analytics-for-Manufacturing-Sector-
 
 LINK OF USER INTERFACE OF THE PROJECT
 https://energy-consumption-iot.herokuapp.com/
