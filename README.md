@@ -36,7 +36,7 @@ The beverage Industry also known as drink industry is the one which manufactures
 Data is collected on real time basis with the help of IoT sensor installed in the various electric motors in each of unit of the manufacturing plant. For every 10 seconds the data of energy consumption by all these individual units is obtained from the IoT sensor.
 • Calculation = ((energy in kWh x 1000)/60 x 60) x 10
 
-##    INITIATION AND DATA PREPARATION 
+##    Initialization and Data Preparation 
 ### High level Flowchart of the process:
 ![image](https://user-images.githubusercontent.com/88075268/150670481-39522112-d1c2-470c-9aef-e08adb0688f6.png)
 
@@ -140,7 +140,9 @@ In the Deployment Actually we have used the following tools:
 
 ### Python:
 A tool used for Manipulation of data and model deployment using different libraries and Modules like Pandas, Flask, statsmodels.
-### Python Flask: Python Flask is an open-source python library that makes it easy to create custom web apps for machine learning and data science. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third party libraries provide common functions.
+
+### Python Flask:
+Python Flask is an open-source python library that makes it easy to create custom web apps for machine learning and data science. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third party libraries provide common functions.
 
 ### Html, CSS:
 HTML (Hypertext markup language) is use for making structure of the website to take inputs manually from the user.
